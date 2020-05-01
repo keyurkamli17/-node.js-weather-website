@@ -145,9 +145,14 @@ h4{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.weather{
+    margin-top: 15px;
+}
+
 #m1,#m2{
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 15px;
     margin: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 12px !important;
 }
