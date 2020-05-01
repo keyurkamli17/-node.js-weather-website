@@ -3,7 +3,9 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
+
 const app = express()
+const port = process.env.PORT || 3000
 
 const pathDir = path.join(__dirname, '../public')
 const Tempath = path.join(__dirname, '../template/views')
@@ -80,7 +82,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server 3000 is Running!');
+app.listen(port, () => {
+    console.log('Server is Running on' + port);
 
 })
