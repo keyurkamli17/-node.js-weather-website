@@ -12,8 +12,8 @@ const forecast = (latitude, longitude, callback) => {
 
             callback(undefined,
                 'Current Temperature is ' + Math.round(body.currently.temperature - 32 * 9 / 5) + ' C degrees. ' +
-                'Minimum Temparature is ' + Math.round(body.daily.data[0].temperatureMin - 32 * 9 / 5) + ' C degrees and ' +
-                'Maximum Temparature is ' + Math.round(body.daily.data[0].temperatureMax - 32 * 9 / 5) + ' C degrees. ' +
+                'High Temparature is ' + Math.round(body.daily.data[0].temperatureHigh - 32 * 9 / 5) + ' C degrees and ' +
+                'Low Temparature is ' + Math.round(body.daily.data[0].temperatureLow - 32 * 9 / 5) + ' C degrees. ' +
                 ' It is ' + body.currently.precipProbability + '% chance of rain. ' +
                 body.hourly.summary
             )
